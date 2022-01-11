@@ -1,0 +1,610 @@
+/*  NOTAS PERSONALES
+____google fonts llamados____
+font-family: 'Indie Flower', cursive;
+
+____Paleta de colores a usar___
+#a52a2a;
+#40476d;
+#d17a22;
+#c5d5e4;
+#0e9594;
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*_________________________ html__home_______________________ */
+body{
+    background-color: #a52a2a;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    padding: 2%;
+}
+body .container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/lineasEnPared.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 99%;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+/*________________________ html__home--header__________________________ */
+.header{
+    background-color: rgba(0,0,0, 0.8);
+    max-width: 100vw;
+    color: #a52a2a;
+    border-radius: 15px;
+    padding: 5px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 50px;
+    gap: 10px;
+    align-items: center;
+}
+.header .header__elemento img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    height: 85%;
+}
+.header .header__elemento h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+    padding: 10px;
+    
+}
+.header .header__elemento a{
+    text-decoration: none;
+    color: #0e9594;
+}
+.header__nav{
+    grid-column: 1/4;
+    margin: auto;
+}
+.header__button{
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 80%;
+    position: fixed;
+    top: 140px;
+}
+.header__button ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.header__button ul li a{
+    display: block;
+}
+.header__button ul li a{
+    display: none;
+}
+.header__nav{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+.header__nav:hover ul li a{
+    float: left;
+    display: flex;
+}
+.header__button ul li a:hover{
+    background-color: #a52a2a;
+    color: #0e9594;
+    border-radius: 15px;
+}
+.navParaResponsive{
+    visibility: hidden;
+}
+/* _____________________html__home--eleccion_________________ */
+.colores h2{
+    font-size: 1.5rem;
+    color:#0e9594;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: 20px;
+}
+.eleccion{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+}
+
+.eleccion__colores{
+    border: 1px solid black;
+    padding: 5px;
+}
+.eleccion .eleccion__colores:first-child{
+    grid-column: 1/3;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    background-color: lightsalmon;
+    
+}
+.eleccion .eleccion__colores:nth-child(2){
+    grid-column: 1/3;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    background-color: lightblue;
+    
+}
+.eleccion .eleccion__colores:nth-child(3){
+    grid-column: 1/3;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    background-color: lightyellow;
+    
+}
+.eleccion .eleccion__colores > select{
+    display: block;
+    margin: 10px auto;
+    width: 80px;
+    font-family: 'Indie Flower', cursive;
+}
+/* colores principales */
+.eleccion__colores #principales option#red{
+    background-color: red;
+}
+.eleccion__colores #principales option#green{
+    background-color:green;
+}
+.eleccion__colores #principales option#blue{
+    background-color:blue;
+}
+.eleccion__colores #principales option#black{
+    color: white;
+    background-color: black;
+}
+.eleccion__colores #principales option#white{
+    background-color: white;
+}
+.eleccion__colores #principales option#yellow{
+    background-color: yellow;
+}
+.eleccion__colores #principales option#orange{
+    background-color: orange;
+}
+.eleccion__colores #principales option#grey{
+    background-color: grey;
+}
+/*__________ colores calidos _______*/
+
+.eleccion__colores #calidos option#red{
+    background-color: red;
+}
+.eleccion__colores #calidos option#green{
+    background-color:green;
+}
+.eleccion__colores #calidos option#blue{
+    background-color:blue;
+}
+.eleccion__colores #calidos option#black{
+    color: white;
+    background-color: black;
+}
+.eleccion__colores #calidos option#white{
+    background-color: white;
+}
+.eleccion__colores #calidos option#yellow{
+    background-color: yellow;
+}
+.eleccion__colores #calidos option#orange{
+    background-color: orange;
+}
+.eleccion__colores #calidos option#grey{
+    background-color: grey;
+}
+/* ___________colores recomendados_________ */
+.eleccion__colores #recomendados option#red{
+    background-color: red;
+}
+.eleccion__colores #recomendados option#green{
+    background-color:green;
+}
+.eleccion__colores #recomendados option#blue{
+    background-color:blue;
+}
+.eleccion__colores #recomendados option#black{
+    color: white;
+    background-color: black;
+}
+.eleccion__colores #recomendados option#white{
+    background-color: white;
+}
+.eleccion__colores #recomendados option#yellow{
+    background-color: yellow;
+}
+.eleccion__colores #recomendados option#orange{
+    background-color: orange;
+}
+.eleccion__colores #recomendados option#grey{
+    background-color: grey;
+}
+/* ___________________html__home--videos_____________________*/
+.videos h4{
+    color:#0e9594;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: 20px;
+}
+.videos{
+    display:flexbox;
+}
+.videos__bloque{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+.videos__bloque iframe{
+    padding: 10px;
+    width: 60vw;
+}
+.videos .videos__enlace{
+    margin-top: 40px ; 
+    width: 100%;
+    text-align: center;
+}
+.videos .videos__enlace a{
+    text-decoration: none;
+}
+.videos #recomendaciones1:hover{
+    width: 100px;
+    border-radius: 20px;
+    background-color: #c5d5e4;
+    color: #a52a2a;
+    padding: 8px;
+}
+/* ____________________footer_____________________ */
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    gap: 10px;
+    padding: 10px
+}
+.footer h4{
+    display: inline-block;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: #0e9594;
+    padding: 5px;
+    width: 100%;
+    height: 25px;
+}
+.footer__nav ul li{
+    padding: 3px;
+    font-size: 0.5rem;
+}
+.footer__nav ul li a{
+    text-decoration: none;
+    color: #0e9594;
+}
+.footer__nav ul li a:hover{
+    background-color: #c5d5e4;
+    color: #a52a2a;
+    padding: 3px;
+    border-radius: 8px;
+    margin-left: 2%;
+}
+.footer h5{
+    display: inline-block;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: #0e9594;
+    padding: 5px;
+    width: 100%;
+    height: 25px;
+}
+.footer__redes ul li{
+    padding: 3px;
+    font-size: 0.5rem;
+}
+.footer__redes ul li a{
+    text-decoration: none;
+    color: #0e9594;
+}
+.footer__redes ul li a:hover{
+    background-color: #c5d5e4;
+    color: #a52a2a;
+    padding: 3px;
+    border-radius: 8px;
+    margin-left: 2%;
+}
+/* ____________________  html__ingresar  ____________ */
+.formulario{
+    margin: auto;
+    margin-top: 50px;
+}
+.formulario h4{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.formulario legend{
+    font-size: 1.1rem;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.registro{
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.registro label{
+    padding: 10px;
+}
+.registro p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.registro #terminos{
+    margin-top: 15px;
+}
+.registro #botonEnviar{
+    width: 30%;
+    margin: auto;
+}
+/* ___________ html__recomendaciones ________ */
+.tituloRecomendaciones h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    width: 70%;
+    margin: auto;
+}
+.contenido .contenido__elemento{
+    margin-top: 15px;
+}
+.contenido p{
+    background-color: rgba(173,216,230, 0.5);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+}
+/* __________________ RESPONSIVE tablet________________ */
+@media (min-width:767px) and (max-width:1023px){
+    .header{
+        height: 40vh;
+    }
+    .header .header__elemento img{
+        width: 150px;
+    }
+    .header .header__elemento h1{
+        font-size: 3rem;
+    }
+    .header .header__elemento a{
+        font-size: 1.3rem;
+    }
+    .header__nav{
+        width: 80vw;
+    }
+    .header__nav button{
+        visibility: hidden;
+    }
+    .navParaResponsive{
+        visibility: visible;
+        display: grid;
+        grid-template-columns: repeat(6,0.6fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+        margin-left: 50px;
+    }
+    .navParaResponsive li a{
+        text-decoration: none;
+        color: #0e9594;
+    }
+    .navParaResponsive li a:hover{
+        background-color: #a52a2a;
+        color: white;
+        padding: 5px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    /* _____________________html__home--eleccion_________________ */
+    .colores h2{
+        font-size: 2rem;
+        height: 30px;
+    }
+    .eleccion .eleccion__colores:first-child{
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .eleccion .eleccion__colores:nth-child(2){
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .eleccion .eleccion__colores:nth-child(3){
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .eleccion .eleccion__colores > select{
+        width: 100px;
+        font-size: 70%;
+    }
+    /* ___________________html__home--videos_____________________*/
+    .videos h4{
+        height: 30px;
+        font-size: 2rem;
+    }
+    .videos__bloque iframe{
+        width: 80vw;
+    }
+    .videos .videos__enlace a{
+        font-size: 1.2rem;
+    }
+    .footer{
+        height: 40vh;
+    }
+    .footer h4{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+
+    }
+    .footer__nav ul li{
+        font-size: 0.8rem;
+    }
+    .footer h5{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .footer__redes ul li{
+        font-size: 0.8rem;
+    }
+    /* ---html recomendaciones--- */
+    .tituloRecomendaciones h3{
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contenido{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px;
+        width: 80%;
+    }
+
+
+}
+/* __________________ RESPONSIVE pantalla________________ */
+@media (min-width:1024px){
+    .header{
+        height: 40vh;
+    }
+    .header .header__elemento img{
+        width: 200px;
+    }
+    .header .header__elemento h1{
+        font-size: 5rem;
+    }
+    .header .header__elemento a{
+        font-size: 1.5rem;
+    }
+    .header__nav{
+        width: 85vw;
+    }
+    .header__nav button{
+        visibility: hidden;
+    }
+    .navParaResponsive{
+        visibility: visible;
+        display: grid;
+        grid-template-columns: repeat(6,0.6fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .navParaResponsive li a{
+        text-decoration: none;
+        color: #0e9594;
+    }
+    .navParaResponsive li a:hover{
+        background-color: #a52a2a;
+        color: white;
+        padding: 5px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    /* _____________________html__home--eleccion_________________ */
+    .colores h2{
+        font-size: 3rem;
+        height: 40px;
+    }
+    .eleccion .eleccion__colores:first-child{
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .eleccion .eleccion__colores:nth-child(2){
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .eleccion .eleccion__colores:nth-child(3){
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .eleccion .eleccion__colores > select{
+        width: 100px;
+        font-size: 70%;
+    }
+    /* ___________________html__home--videos_____________________*/
+    .videos h4{
+        font-size: 3rem;
+        height: 40px;
+    }
+    .videos__bloque iframe{
+        width: 80vw;
+        height: 40vh;
+    }
+    .videos .videos__enlace a{
+        font-size: 1.5rem;
+    }
+    .footer{
+        height: 40vh;
+    }
+    .footer h4{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+
+    }
+    .footer__nav ul li{
+        font-size: 1rem;
+    }
+    .footer h5{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .footer__redes ul li{
+        font-size: 1rem;
+    }
+    /* ---html recomendaciones--- */
+    .tituloRecomendaciones h3{
+        font-size: 3rem;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .contenido{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px;
+        width: 90%;
+    }
+
+}

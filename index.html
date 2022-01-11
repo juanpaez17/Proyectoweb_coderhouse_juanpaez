@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--  prueba hola en este proyecto realizare una pagina de una tienda de pinturas para hogar -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Pinturas Páez</title></head>
+        <!-- reset css -->
+        <link rel="stylesheet" href="./styles/reset.css">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./imagenes/favicon-pint.ico" type="image/x-icon">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <!-- styles -->
+        <link rel="stylesheet" href="./styles/stylespinturaspaez.css">
+    <body>
+        <div class="container">
+            <header class="header">
+                <!-- titulo -->
+                <div class="header__elemento" id="nohover">
+                    <a  href="./index.html" ><img src="./imagenes/pexels-ksenia-chernaya-5691700.jpg" alt="Pinturas" width="160" height="120"></a>
+                </div>
+                <div class="header__elemento">
+                    <h1 >Pinturas Páez</h1>
+                </div>
+                <div class="header__elemento">
+                    <a href="./paginas/ingresar.html">Ingresar</a>
+                </div>
+                               
+                <!-- navbar -->
+                <nav class="header__nav">
+                    <button class="header__button"> Menú
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./paginas/recomendaciones.html">Recomendaciones</a></li>
+                            <li><a href="./paginas/pintoresautorizados.html">Pintores Autorizados</a></li>
+                            <li><a href="./paginas/otrosproductos.html">Otros Productos</a></li>
+                            <li><a href="./paginas/contacto.html">Contacto</a></li>
+                            <li><a href="./paginas/ingresar.html">Ingresar</a></li>
+                        </ul>
+                    </button>
+                    <ul class="navParaResponsive">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./paginas/recomendaciones.html">Recomendaciones</a></li>
+                        <li><a href="./paginas/pintoresautorizados.html">Pintores Autorizados</a></li>
+                        <li><a href="./paginas/otrosproductos.html">Otros Productos</a></li>
+                        <li><a href="./paginas/contacto.html">Contacto</a></li>
+                        <li><a href="./paginas/ingresar.html">Ingresar</a></li>
+                    </ul>
+                </nav> 
+            </header>
+            <!-- Busqueda de Colores -->
+            <section class="colores">
+                <h2>Elige tus Colores</h2>
+                <main class="eleccion">
+                    <!-- colores principales -->
+                    <div class="eleccion__colores">
+                        <label for="principales">Colores Principales</label>
+                        <select name="principales" id="principales"> 
+                            <option value="E"; id="elige">Elegir</option>
+                            <option value="red" id="red">ROJO</option>
+                            <option value="green", id="green">VERDE</option>
+                            <option value="blue",  id="blue" >AZUL</option>
+                            <option value="black", id="black" >NEGRO</option>
+                            <option value="white", id="white" >BLANCO</option>
+                            <option value="yellow", id="yellow" >AMARILLO</option>
+                            <option value="orange", id="orange" >NARANJA</option>
+                            <option value="grey", id="grey" >GRIS</option>
+                        </select>
+                    </div>
+                    <!-- colores calidos -->
+                    <!-- AUN NO TERMINADO -->
+                    <div class="eleccion__colores">
+                        <label for="calidos">Colores Calidos</label>
+                        <select name="calidos" id="calidos"> 
+                            <option value="E"; id="elige">Elegir</option>
+                            <option value="red" id="red">ROJO</option>
+                            <option value="green", id="green">VERDE</option>
+                            <option value="blue",  id="blue" >AZUL</option>
+                            <option value="black", id="black" >NEGRO</option>
+                            <option value="white", id="white" >BLANCO</option>
+                            <option value="yellow", id="yellow" >AMARILLO</option>
+                            <option value="orange", id="orange" >NARANJA</option>
+                            <option value="grey", id="grey" >GRIS</option>
+                        </select>
+                    </div>
+                    
+                    <!-- colores recomendados -->
+                    <!-- AUN NO TERMINADO -->
+                    <div class="eleccion__colores">
+                        <label for="recomendados">Colores Recomendados</label>
+                        <select name="recomendados" id="recomendados">
+                            <option value="E"; id="elige">Elegir</option> 
+                            <option value="red" id="red">ROJO</option>
+                            <option value="green", id="green">VERDE</option>
+                            <option value="blue",  id="blue" >AZUL</option>
+                            <option value="black", id="black" >NEGRO</option>
+                            <option value="white", id="white" >BLANCO</option>
+                            <option value="yellow", id="yellow" >AMARILLO</option>
+                            <option value="orange", id="orange" >NARANJA</option>
+                            <option value="grey", id="grey" >GRIS</option>
+                        </select>
+                    </div>
+                </main>
+            </section>
+            <!-- Videos -->
+            <section class="videos">     
+                <h4>Sugerencias</h4>
+                <div class="videos__bloque">
+                    <div class="videos__elemento">
+                        <iframe src="https://www.youtube.com/embed/zqdUj1DksRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="videos__elemento">
+                        <iframe   src="https://www.youtube.com/embed/JNo893YA5ws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="videos__elemento">
+                        <iframe   src="https://www.youtube.com/embed/XgD_HHdaPx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="videos__enlace">
+
+                    <a href="./paginas/recomendaciones.html" id="recomendaciones1">Ir a Recomendaciones (mas videos)</a>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer class="footer">
+                
+                <div class="footer__nav">
+                    <h4>Opciones</h4>                
+                    <ul class="footer__ul">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./paginas/recomendaciones.html">Recomendaciones</a></li>
+                        <li><a href="./paginas/pintoresautorizados.html">Pintores Autorizados</a></li>
+                        <li><a href="./paginas/otrosproductos.html">Otros Productos</a></li>
+                        <li><a href="./paginas/contacto.html">Contacto</a></li>
+                        <li><a href="./paginas/ingresar.html">Ingresar</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Redes sociales -->
+                <div class="footer__redes">
+                    <h5>Nuestras redes sociales</h5>
+                    <ul class="footer__enlaces">
+                        <li><a href="https://www.twitter.com", target="_blank">twitter</a></li>
+                        <li><a href="https://www.instagram.com", target="_blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com", target="_blank">Youtube</a></li>
+                        <li><a href="https://www.likedin.com", target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
+
+
+            </footer>
+        </div>
+    </body>
+</html>
