@@ -105,6 +105,30 @@ body .container{
 .navParaResponsive{
     visibility: hidden;
 }
+/* ******** Animaciones******* */
+@keyframes efecto__arriba {
+    0%{
+        font-size:0.5rem ;
+    }
+    30%{
+        font-size: 1rem;
+    }
+    /* 65%{
+        font-size: 1.5rem;
+    } */
+    100%{
+        font-size: 4rem;
+    }
+}
+.h1__efecto{
+    animation-name: efecto__arriba;
+    animation-iteration-count: 2;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+
 /* _____________________html__home--eleccion_________________ */
 .colores h2{
     font-size: 1.5rem;
