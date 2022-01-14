@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.body__personal{
+    background-color: #a52a2a;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    padding: 10px;
+}
+.body__personal--bg{
+    background-image: url(../imagenes/lineasEnPared.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.header__personal{
+    background-color: rgba(0,0,0, 0.8);
+    border-radius: 15px;
+    color: #a52a2a;
+    position: sticky;
+    top: 20px;
+    margin: auto;
+    z-index: 10;
+}
+.a__enlance--personal{
+    color: #0e9594    ;
+}
+.bg__bordo{
+    background-color: rgb(165, 40, 40,0.5);
+}
+.text__color--personal{
+    color: #0e9594;
+}
+.estilo__subtitulo{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: 40px;
+    color:#0e9594;
+    font-weight: 700;
+}
+.bg__1--personal{
+    background-color: rgb(255, 160, 122);
+}
+.bg__2--personal{
+    background-color: lightblue;
+}
+.bg__3--personal{
+    background-color: lightyellow;
+}
+/************* boton selec de colores Principales*************** */
+#principales option#red{
+    background-color: red;
+}
+#principales option#green{
+    background-color:green;
+}
+#principales option#blue{
+    background-color:blue;
+}
+#principales option#black{
+    color: white;
+    background-color: black;
+}
+#principales option#white{
+    background-color: white;
+}
+#principales option#yellow{
+    background-color: yellow;
+}
+#principales option#orange{
+    background-color: orange;
+}
+#principales option#grey{
+    background-color: grey;
+}
+/************* boton selec de colores calidos*************** */
+#calidos option#red{
+    background-color: red;
+}
+#calidos option#green{
+    background-color:green;
+}
+#calidos option#blue{
+    background-color:blue;
+}
+#calidos option#black{
+    color: white;
+    background-color: black;
+}
+#calidos option#white{
+    background-color: white;
+}
+#calidos option#yellow{
+    background-color: yellow;
+}
+#calidos option#orange{
+    background-color: orange;
+}
+#calidos option#grey{
+    background-color: grey;
+}
+/************* boton selec de colores Recomendados*************** */
+#recomendados option#red{
+    background-color: red;
+}
+#recomendados option#green{
+    background-color:green;
+}
+#recomendados option#blue{
+    background-color:blue;
+}
+#recomendados option#black{
+    color: white;
+    background-color: black;
+}
+#recomendados option#white{
+    background-color: white;
+}
+#recomendados option#yellow{
+    background-color: yellow;
+}
+#recomendados option#orange{
+    background-color: orange;
+}
+#recomendados option#grey{
+    background-color: grey;
+}
+.footer__personal{
+    background-color: rgba(0,0,0, 0.8);
+    border-radius: 15px;
+    color: #a52a2a;
+    top: 20px;
+    margin: auto;
+}
+
+.footer__personal div ul li a{
+    color: #0e9594;
+}
+section div a{
+    color: #0e9594;
+} 

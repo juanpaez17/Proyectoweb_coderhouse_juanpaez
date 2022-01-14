@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="./styles/stylespinturaspaez.css">
     </head>    
     <body>
-        <div class="container">
+        <div class="container container-fluid ">
             <header class="header">
                 <!-- titulo -->
                 <div class="header__elemento" id="nohover">
@@ -37,7 +37,36 @@
                 </div>
                                
                 <!-- navbar -->
-                <nav class="header__nav">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse bg-light bg-opacity-50 p-2" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./paginas/recomendaciones.html">Recomendaciones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./paginas/pintoresautorizados.html">Pintores autorizados</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./paginas/otrosproductos.html">Otros productos</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link active" href="./paginas/contacto.html">Contacto</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link active" href="./paginas/ingresar.html">Ingresar</a>
+                          </li>
+                          
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                <!-- <nav class="header__nav">
                     <button class="header__button"> Menú
                         <ul>
                             <li><a href="../index.html">Inicio</a></li>
@@ -56,12 +85,12 @@
                         <li><a href="./paginas/contacto.html">Contacto</a></li>
                         <li><a href="./paginas/ingresar.html">Ingresar</a></li>
                     </ul>
-                </nav> 
+                </nav>  -->
             </header>
             <!-- Busqueda de Colores -->
             <section class="colores">
-                <h2 class="animate__animated animate__swing">Elige tus Colores</h2>
-                <main class="eleccion" data-aos="fade-up-left">
+<!--                 <h2 class="animate__animated animate__swing">Elige tus Colores</h2>
+ -->                <main class="eleccion" data-aos="fade-up-left">
                     <!-- colores principales -->
                     <div class="eleccion__colores">
                         <label for="principales">Colores Principales</label>
